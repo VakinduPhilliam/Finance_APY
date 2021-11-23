@@ -1,0 +1,25 @@
+{
+  "name": "apy",
+  "version": "1.0.0",
+  "description": "Opareta Financial Management tool to calculate APY",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Opareta",
+    "APY"
+  ],
+  "author": "Vakindu Philliam",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "jest": "^27.3.1",
+    "memory-cache": "^0.2.0",
+    "redis": "^3.1.2",
+    "sqlite3": "^5.0.2"
+  },
+  "devDependencies": {
+    "supertest": "^6.1.6"
+  }
+}
