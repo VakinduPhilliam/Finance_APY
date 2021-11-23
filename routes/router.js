@@ -25,7 +25,6 @@ module.exports = {
         const deleted=0; // Deleted default is 0 - means not deleted, 1 means it's deleted
         //let calculateApy = Math.pow((1 + (Number(interest_rate) / Number(yearly_compound_times))),(Number(yearly_compound_times) - 1));
         let calculateApy = Math.pow((1 + (interest_rate/yearly_compound_times)),(yearly_compound_times - 1));
-        console.log(calculateApy);
 
         // send the user's details to the database
         db.run('INSERT INTO apy (deposit, customer_id, interest_rate, yearly_compound_times, date, apy_value, deleted) VALUES (?, ?, ?, ?, ?, ?, ?)',

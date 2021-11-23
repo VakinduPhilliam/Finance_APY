@@ -13,14 +13,5 @@ it('Fetch APY Endpoint successful', async done => {
     done()
 });
 
-it('Delete APY History successful', async done => {
-    // Sends DELETE Request to /test endpoint
-    const response = await request.delete('/apy/1')
-
-    expect(response.status).toBe(200)
-    expect(response.body.message).toBe('pass!')
-    done()
-});
-
 });
 
