@@ -32,7 +32,7 @@ _node index.js_
 
 - Request Type: POST
 
-- Request URL: http://localhost:3000/apy
+- Request URL: http://localhost:4500/apy
 
 - Request parameters: _deposit, customer_id, interest_rate, yearly_compound_times_ 
 
@@ -56,7 +56,7 @@ _node index.js_
 
 - Request Type: GET
 
-- Request URL: http://localhost:3000/apy/1
+- Request URL: http://localhost:4500/apy/1
 
 - Request Parameters: id - customer_id
 
@@ -67,7 +67,7 @@ _node index.js_
 
 - Request Type: DELETE
 
-- Request URL: http://localhost:3000/apy/1
+- Request URL: http://localhost:4500/apy/1
 
 - Request Parameters: id - customer_id
 

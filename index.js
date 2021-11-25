@@ -9,7 +9,7 @@ const app = express();
 // Import router routes
 const {addAPY, apy, deleteAPY} = require('./routes/router');
 
-const port = 3000;
+const port = 4500;
 
 // create and connect to sqlite database
 const db = new sqlite3.Database('./db/opareta.db', (err) => {

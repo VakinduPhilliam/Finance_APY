@@ -23,7 +23,7 @@ module.exports = {
 
         const date = new Date(); // Date of signup
         const deleted=0; // Deleted default is 0 - means not deleted, 1 means it's deleted
-        let calculateApy = (Math.pow((1 + (interest_rate/yearly_compound_times)),yearly_compound_times) - 1)*deposit; // Calculate APY
+        let calculateApy = (Math.pow((1 + (interest_rate/yearly_compound_times)),yearly_compound_times) - 1)*100; // Calculate APY
 
         // send the user's details to the database
         db.run('INSERT INTO apy (deposit, customer_id, interest_rate, yearly_compound_times, date, apy_value, deleted) VALUES (?, ?, ?, ?, ?, ?, ?)',
@@ -66,7 +66,7 @@ module.exports = {
         if (rows.length>0) {
             
             // If yes, display the data
-            res.json(rows);
+            res.status(200).json(rows);
 
         } else {    
             
