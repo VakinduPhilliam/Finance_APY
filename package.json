@@ -2,9 +2,10 @@
   "name": "apy",
   "version": "1.0.0",
   "description": "Opareta Financial Management tool to calculate APY",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start":"node app.js",
+    "test":"jest --forceExit --detectOpenHandles"
   },
   "keywords": [
     "Opareta",

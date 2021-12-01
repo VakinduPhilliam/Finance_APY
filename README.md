@@ -9,6 +9,7 @@
 - Database: _SQLite3_.
 - Caching: _Redis/Memory-Cache_.
 - Testing: _Jest/supertest_.
+- Containerization: _Docker/circleCI_
 
 ## Installations:
 
@@ -22,7 +23,19 @@
 
 ## Running the app:
 
-_node index.js_
+Enter any of the following commands into the terminal to run the app.
+
+_node app.js_
+
+OR,
+
+_npm start_
+
+## Testing the app:
+
+Enter the following command into the terminal to test the app's api endpoints.
+
+_npm test_
 
 ## API Endpoints:
 
@@ -32,7 +45,7 @@ _node index.js_
 
 - Request Type: POST
 
-- Request URL: http://localhost:4500/apy
+- Request URL: http://localhost:5000/apy
 
 - Request parameters: _deposit, customer_id, interest_rate, yearly_compound_times_ 
 
@@ -56,7 +69,7 @@ _node index.js_
 
 - Request Type: GET
 
-- Request URL: http://localhost:4500/apy/1
+- Request URL: http://localhost:5000/apy/1
 
 - Request Parameters: id - customer_id
 
@@ -67,7 +80,7 @@ _node index.js_
 
 - Request Type: DELETE
 
-- Request URL: http://localhost:4500/apy/1
+- Request URL: http://localhost:5000/apy/1
 
 - Request Parameters: id - customer_id
 

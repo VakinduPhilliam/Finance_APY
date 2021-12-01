@@ -54,8 +54,5 @@ app.post('/apy', addAPY); // Route to calculate APY
 app.get('/apy/:id', cacheMiddleware(15), apy); // Route to get customer APY History
 app.delete('/apy/:id', deleteAPY); // Route to 'delete' customer APY
 
-// Set the app to listen on the port
-app.listen(port, () => {
-    console.log(`Server running on port: ${port}`);
-});
-
+// Export app
+module.exports = app;
