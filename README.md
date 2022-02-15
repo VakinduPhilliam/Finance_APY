@@ -1,7 +1,7 @@
 
-# Opareta APY
+# Finance APY
 
-## Opareta Financial Management tool to calculate APY
+## Financial Management tool to calculate APY
 
 ## Technologies used:
 
